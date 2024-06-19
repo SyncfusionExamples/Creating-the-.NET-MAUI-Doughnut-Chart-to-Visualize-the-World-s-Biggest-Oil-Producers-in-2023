@@ -9,11 +9,11 @@
         <model:WorldOilProduction x:Name="worldOilProduction"/>
     </ContentPage.BindingContext>
 
-    <Border Background="#fefae0" StrokeThickness="4" Margin="5,15,5,5"  x:Name="border" >
+    <Border Background="#fefae0" StrokeThickness="4" Margin="{OnPlatform Default='5,15,5,5', iOS='25,0,20,25'}">
         <Border.StrokeShape>
             <RoundRectangle CornerRadius="10" />
         </Border.StrokeShape>
-        <chart:SfCircularChart x:Name="chart">
+        <chart:SfCircularChart x:Name="chart" Margin="{OnPlatform Default='0,0,0,0',iOS='-35,0,0,0'}">
             <chart:SfCircularChart.Resources>
                 <DataTemplate x:Key="labelTemplate">
                     <HorizontalStackLayout Spacing="5">
