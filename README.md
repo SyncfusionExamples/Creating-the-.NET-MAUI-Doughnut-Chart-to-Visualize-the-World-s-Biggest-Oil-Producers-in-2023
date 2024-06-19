@@ -1,4 +1,4 @@
-# Creating-the-.NET-MAUI-Doughnut-Chart-to-Visualize-the-World-s-Biggest-Oil-Producers-in-2023
+# Creating the- NET MAUI Doughnut Chart to Visualize the World's Biggest Oil Producers in 2023
 This sample demonstrates how to create a .NET MAUI Doughnut Chart to Visualize The World's Biggest Oil Producers in 2023
 
 ## Doughnut chart
