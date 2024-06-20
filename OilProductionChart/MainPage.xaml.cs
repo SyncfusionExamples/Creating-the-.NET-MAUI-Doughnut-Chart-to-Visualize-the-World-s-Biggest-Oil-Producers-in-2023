@@ -7,7 +7,6 @@ namespace OilProductionChart
         public MainPage()
         {
             InitializeComponent();
-            var assembly = typeof(MainPage).GetTypeInfo().Assembly;
 
 #if ANDROID || IOS
             HorizontalStackLayout horizontalStackLayout = new HorizontalStackLayout();

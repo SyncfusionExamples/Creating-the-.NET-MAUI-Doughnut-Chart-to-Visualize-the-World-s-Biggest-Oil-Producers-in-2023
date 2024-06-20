@@ -17,9 +17,9 @@
             <chart:SfCircularChart.Resources>
                 <DataTemplate x:Key="labelTemplate">
                     <HorizontalStackLayout Spacing="5">
-                        <Image Source="{Binding Item.FlagImage}" VerticalOptions="Center"  HeightRequest="{OnPlatform Android=20,Default=30,iOS=20}" WidthRequest="{OnPlatform Android=20,Default=30,iOS=20}" />
-                        <Label Text="{Binding Item.Country}" VerticalOptions="Center"  FontFamily="centurygothic"  FontSize="{OnPlatform Android=15,Default=20,iOS=15}"/>
-                        <Label Text="{Binding Item.Production,StringFormat=': {0}%'}" Margin="-4,0,0,0" VerticalOptions="Center"  FontFamily="centurygothic"  FontSize="{OnPlatform Android=15,Default=20,iOS=15}"/>
+                        <Image Source="{Binding Item.FlagImage}" VerticalOptions="Center" HeightRequest="{OnPlatform Android=20,Default=30,iOS=20}" WidthRequest="{OnPlatform Android=20,Default=30,iOS=20}" />
+                        <Label Text="{Binding Item.Country}" VerticalOptions="Center" FontFamily="centurygothic" FontSize="{OnPlatform Android=15,Default=20,iOS=15}"/>
+                        <Label Text="{Binding Item.Production,StringFormat=': {0}%'}" FontFamily="centurygothic" Margin="-4,0,0,0" VerticalOptions="Center"    FontSize="{OnPlatform Android=15,Default=20,iOS=15}"/>
                     </HorizontalStackLayout>
                 </DataTemplate>
             </chart:SfCircularChart.Resources>
@@ -42,14 +42,14 @@
                     <StackLayout Grid.Column="1" Grid.Row="0" Margin="0,10,0,0">
                         <Label Text="The World's Biggest Oil Producers in 2023"   
                                Margin="0,0,0,6"
-                               FontSize="22"    
+                               FontSize="22"
                                FontFamily="centurygothic"
                                FontAttributes="Bold"  
                                TextColor="Black"/>
                         <Label Text="Crude Oil Production (Million barrels per day)"   
                                FontSize="18"      
+                               TextColor="Black" 
                                FontFamily="centurygothic"
-                               TextColor="Black"  
                                Margin="0,2,0,0"/>
                     </StackLayout>
                 </Grid>
@@ -64,7 +64,8 @@
                                   PaletteBrushes="{Binding PaletteBrushes}"
                                   Radius="{OnPlatform Android=0.6,Default=0.65,iOS=0.5}"
                                   InnerRadius="0.5"
-                                  ExplodeIndex="{Binding ExplodeIndex,Mode=TwoWay}" ExplodeOnTouch="True">
+                                  ExplodeOnTouch="True"
+                                  ExplodeIndex="{Binding ExplodeIndex,Mode=TwoWay}">
                 <chart:DoughnutSeries.CenterView>
                     <VerticalStackLayout Spacing="{OnPlatform Android=3.5,Default=7,iOS=3.5}">
                         <Image HorizontalOptions="Center" 
@@ -73,8 +74,8 @@
                                WidthRequest="{OnPlatform Android=15,Default=50,iOS=15}"
                                Margin="{OnPlatform Default='5,0,0,0', Android='2.5,0,0,0'}"
                                Source="oildrum.png"/>
-                        <Label HorizontalOptions="Center" FontFamily="centurygothic" FontAttributes="Bold" FontSize="{OnPlatform Android=10,Default=21,iOS=10}"  Text="{Binding CountryName,Source={x:Reference worldOilProduction}}"/>
-                        <Label HorizontalOptions="Center" FontFamily="centurygothic" FontAttributes="Bold" FontSize="{OnPlatform Android=10,Default=20,iOS=10}" Text="{Binding ProductionValue,Source={x:Reference worldOilProduction},StringFormat='{0}M'}" />
+                        <Label HorizontalOptions="Center" FontAttributes="Bold" FontFamily="centurygothic" FontSize="{OnPlatform Android=10,Default=21,iOS=10}"  Text="{Binding CountryName,Source={x:Reference worldOilProduction}}"/>
+                        <Label HorizontalOptions="Center" FontAttributes="Bold" FontFamily="centurygothic" FontSize="{OnPlatform Android=10,Default=20,iOS=10}" Text="{Binding ProductionValue,Source={x:Reference worldOilProduction},StringFormat='{0}M'}" />
                     </VerticalStackLayout>
                 </chart:DoughnutSeries.CenterView>
                 <chart:DoughnutSeries.DataLabelSettings>

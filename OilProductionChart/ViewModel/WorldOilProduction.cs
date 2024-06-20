@@ -60,29 +60,7 @@ namespace OilProductionChart
 
             PaletteBrushes = new List<Brush>
             {
-                //new SolidColorBrush(Color.FromArgb("#583101")),
-                //new SolidColorBrush(Color.FromArgb("#603808")),
-                //new SolidColorBrush(Color.FromArgb("#6f4518")),
-                //new SolidColorBrush(Color.FromArgb("#8b5e34")),
-                //new SolidColorBrush(Color.FromArgb("#a47148")),
-                //new SolidColorBrush(Color.FromArgb("#bc8a5f")),
-                //new SolidColorBrush(Color.FromArgb("#d4a276")),
-                //new SolidColorBrush(Color.FromArgb("#e7bc91")),
-                //new SolidColorBrush(Color.FromArgb("#f3d5b5")),
-                //new SolidColorBrush(Color.FromArgb("#FFEDD8"))
-
-                //new SolidColorBrush(Color.FromArgb("#797D62")),
-                //new SolidColorBrush(Color.FromArgb("#9B9B7A")),
-                //new SolidColorBrush(Color.FromArgb("#BAA587")),
-                //new SolidColorBrush(Color.FromArgb("#D9AE94")),
-                //new SolidColorBrush(Color.FromArgb("#F1DCA7")),
-                //new SolidColorBrush(Color.FromArgb("#FFCB69")),
-                //new SolidColorBrush(Color.FromArgb("#E8AC65")),
-                //new SolidColorBrush(Color.FromArgb("#D08C60")),
-                //new SolidColorBrush(Color.FromArgb("#B58463")),
-                //new SolidColorBrush(Color.FromArgb("#997B66"))
-
-                     new SolidColorBrush(Color.FromArgb("#9b2226")),
+                new SolidColorBrush(Color.FromArgb("#9b2226")),
                 new SolidColorBrush(Color.FromArgb("#ae2012")),
                 new SolidColorBrush(Color.FromArgb("#bb3e03")),
                 new SolidColorBrush(Color.FromArgb("#ca6702")),
@@ -92,11 +70,8 @@ namespace OilProductionChart
                 new SolidColorBrush(Color.FromArgb("#0a9396")),
                 new SolidColorBrush(Color.FromArgb("#005f73")),
                 new SolidColorBrush(Color.FromArgb("#BF001219"))
-
-
             };
         }
-
 
         public IEnumerable<OilProductionModel> ReadCSV()
         {
