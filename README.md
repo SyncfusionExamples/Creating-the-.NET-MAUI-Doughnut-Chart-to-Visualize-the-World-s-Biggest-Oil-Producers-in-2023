@@ -21,4 +21,4 @@ Any view can be added to the center of the doughnut chart using the [CenterView]
 
 ![DoughnutChartOutput](https://github.com/SyncfusionExamples/Creating-the-.NET-MAUI-Pie-Chart-to-Visualize-the-World-s-Biggest-Oil-Producers-in-2023/assets/126754274/9db00bd5-46f0-4c90-b9c3-cdd2e53c5742)
 
-For more details on the step-by-step procedure, refer to the blog of the World's Biggest Oil Producers in 2023
+For more details on the step-by-step procedure, refer to the blog of the [World's Biggest Oil Producers in 2023](https://www.syncfusion.com/blogs/post/maui-doughnut-chart-oil-producers)
